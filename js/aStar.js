@@ -207,7 +207,7 @@ function moveTo(event){
     close = [];
     path = [];
     
-    if(bornPath(Math.floor((event.touches[0].clientX - wrapper.offsetLeft)/cellLength),Math.floor((event.touches[0].clientY - wrapper.offsetTop)/cellLength))){
+    if(bornPath(Math.floor((event.clientX - wrapper.offsetLeft)/cellLength),Math.floor((event.clientY - wrapper.offsetTop)/cellLength))){
         
         var i = 0;
         

@@ -41,7 +41,7 @@ function init(){
     target = new targetObj();
     target.init();
     
-    canvas.addEventListener("touchend",moveTo);
+    canvas.addEventListener("click",moveTo);
     
 }
 
