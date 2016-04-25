@@ -17,8 +17,8 @@ blockObj.prototype.init = function(){//成员函数--初始化
         
         this.x[i] = Math.floor( Math.random() * Math.floor(canWidth/cellLength) )* cellLength;
         this.y[i] = Math.floor( Math.random() * Math.floor(canHeight/40) + Math.floor(canHeight/120) )* cellLength;
-        this.width[i] = Math.floor( Math.random() * 2 + 4 - Math.floor(Level/6) )* cellLength;
-        this.height[i] = Math.floor( Math.random() * 1 + 4 - Math.floor(Level/6) )* cellLength;
+        this.width[i] = Math.floor( Math.random() * 5 + 5 - Math.floor(Level/5) )* cellLength;
+        this.height[i] = Math.floor( Math.random() * 5 + 5 - Math.floor(Level/5) )* cellLength;
         this.bool[i] = true;
         
         var nx1 = this.x[i];
@@ -36,7 +36,7 @@ blockObj.prototype.init = function(){//成员函数--初始化
             if(nx1 <= ox1 && ny1 <= oy1 && ny2 >= oy1 && nx2 >= ox1 ||
             nx1 <= ox1 && ny1 >= oy1 && ny1 <= oy2 && nx2 >= ox1 ||
             nx1 >= ox1 && nx1 <= ox2 && ny1 <= oy1 && ny2 >= oy1 ||
-            nx1 >= ox1 && nx1 <= ox2 || nx2 > canWidth)
+            nx1 >= ox1 && nx1 <= ox2 || nx2 > canWidth || ny2 > 5*canHeight/6)
                 
                 this.bool[i] = false;
             
