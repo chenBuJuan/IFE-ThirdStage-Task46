@@ -42,7 +42,7 @@ function init(){
     target.init();
     
     canvas.addEventListener("click",moveTo);
-    canvas.addEventListener("touchend",moveTo);
+    canvas.addEventListener("touchstart",moveTo);
     
 }
 
