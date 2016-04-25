@@ -41,7 +41,11 @@ function init(){
     target = new targetObj();
     target.init();
     
-    canvas.addEventListener("click",moveTo);
+    canvas.addEventListener("click",function(event){
+        
+        moveTo(event);
+        
+    });
     
 }
 
