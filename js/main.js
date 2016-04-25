@@ -41,8 +41,7 @@ function init(){
     target = new targetObj();
     target.init();
     
-    canvas.addEventListener("click",moveTo);
-    canvas.addEventListener("touchstart",moveTo);
+    canvas.addEventListener("touchend",moveTo);
     
 }
 

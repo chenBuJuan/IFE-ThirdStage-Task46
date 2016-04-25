@@ -166,7 +166,7 @@ function bornPath(targetX,targetY){//定义执行函数，生成path路径
     nowX = hero.getX()/cellLength;
     nowY = hero.getY()/cellLength;
     var node = createNode(nowX,nowY,targetX,targetY);
-    
+    console.log(targetX,targetY);
     if(!map[targetY][targetX]){
         
         return false;
@@ -207,7 +207,7 @@ function moveTo(event){
     close = [];
     path = [];
     
-    if(bornPath(Math.floor((event.clientX - wrapper.offsetLeft)/cellLength),Math.floor((event.clientY - wrapper.offsetTop)/cellLength))){
+    if(bornPath(Math.floor((event.touches[0].clientX - wrapper.offsetLeft)/cellLength),Math.floor((event.touches[0].clientY - wrapper.offsetTop)/cellLength))){
         
         var i = 0;
         
