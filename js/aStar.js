@@ -198,7 +198,9 @@ function bornPath(targetX,targetY){//定义执行函数，生成path路径
     
 }
 
-function moveTo(){
+function moveTo(event){
+    
+    var event = event || window.event;
     
     clearInterval(timer);
     open = [];
