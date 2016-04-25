@@ -166,7 +166,7 @@ function bornPath(targetX,targetY){//定义执行函数，生成path路径
     nowX = hero.getX()/cellLength;
     nowY = hero.getY()/cellLength;
     var node = createNode(nowX,nowY,targetX,targetY);
-    console.log(targetX,targetY);
+    
     if(!map[targetY][targetX]){
         
         return false;
