@@ -1,4 +1,4 @@
-var targetObj = function(){
+var targetObj = function(){//target类声明
     
     this.x;
     this.y;
@@ -6,7 +6,7 @@ var targetObj = function(){
     
 }
 
-targetObj.prototype.init = function(){
+targetObj.prototype.init = function(){//成员函数--初始化
     
     this.x = Math.floor( Math.random() * Math.floor(canWidth/cellLength) )* cellLength;
     this.y = Math.floor( Math.random() * Math.floor(canHeight/120) + Math.floor(canHeight/24) )* cellLength;
@@ -14,7 +14,7 @@ targetObj.prototype.init = function(){
     
 }
 
-targetObj.prototype.draw = function(){
+targetObj.prototype.draw = function(){//成员函数--绘制
     
     ctx.save();
     ctx.fillStyle = "#F4AF29";
@@ -26,13 +26,13 @@ targetObj.prototype.draw = function(){
     
 }
 
-targetObj.prototype.getX = function(){
+targetObj.prototype.getX = function(){//成员函数--返回坐标值
     
     return this.x;
     
 }
 
-targetObj.prototype.getY = function(){
+targetObj.prototype.getY = function(){//成员函数--返回坐标值
     
     return this.y;
     

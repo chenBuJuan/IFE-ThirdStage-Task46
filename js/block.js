@@ -1,4 +1,4 @@
-var blockObj = function(){
+var blockObj = function(){//block类声明
     
     this.x = [];
     this.y = [];
@@ -11,7 +11,7 @@ var blockObj = function(){
 
 blockObj.prototype.num = 100;
 
-blockObj.prototype.init = function(){
+blockObj.prototype.init = function(){//成员函数--初始化
     
     for(var i = 0 ; i < this.num ; i ++){
         
@@ -46,7 +46,7 @@ blockObj.prototype.init = function(){
     
 }
 
-blockObj.prototype.draw = function(){
+blockObj.prototype.draw = function(){//成员函数--绘制
     
     ctx.save();
     ctx.fillStyle = "#2E1E1E";
@@ -65,7 +65,7 @@ blockObj.prototype.draw = function(){
     
 }
 
-blockObj.prototype.buildMap = function(){
+blockObj.prototype.buildMap = function(){//成员函数--生成虚拟地图
     
     for(var i = 0 ; i < Math.ceil(canHeight/cellLength) ; i ++){
         

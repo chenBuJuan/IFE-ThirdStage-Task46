@@ -5,9 +5,9 @@ var close = [];//定义close列表，储存已检查过的节点
 
 var path = [];//定义路径队列，储存最终生成的路径
 
-var nowX;
-var nowY;
-var timer;
+var nowX;//记录特工当前坐标
+var nowY;//记录特工当前坐标
+var timer;//定时器
 
 function openIn(node){//定义open入队函数
     
@@ -198,7 +198,7 @@ function bornPath(targetX,targetY){//定义执行函数，生成path路径
     
 }
 
-function moveTo(event){
+function moveTo(event){//定义移动函数，用定时器控制特工坐标更新
     
     var event = event || window.event;
     

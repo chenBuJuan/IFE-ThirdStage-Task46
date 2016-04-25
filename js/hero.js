@@ -1,4 +1,4 @@
-var heroObj = function(){
+var heroObj = function(){//hero类声明
     
     this.x;
     this.y;
@@ -6,7 +6,7 @@ var heroObj = function(){
     
 }
 
-heroObj.prototype.init = function(){
+heroObj.prototype.init = function(){//成员函数--初始化
     
     this.x = Math.floor( Math.random() * Math.floor(canWidth/cellLength) )* cellLength;
     this.y = Math.floor( Math.random() * Math.floor(canHeight/120) )* cellLength;
@@ -14,7 +14,7 @@ heroObj.prototype.init = function(){
     
 }
 
-heroObj.prototype.draw = function(){
+heroObj.prototype.draw = function(){//成员函数--绘制
     
     ctx.save();
     ctx.fillStyle = "#44B811";
@@ -26,19 +26,19 @@ heroObj.prototype.draw = function(){
     
 }
 
-heroObj.prototype.getX = function(){
+heroObj.prototype.getX = function(){//成员函数--返回坐标值
     
     return this.x;
     
 }
 
-heroObj.prototype.getY = function(){
+heroObj.prototype.getY = function(){//成员函数--返回坐标值
     
     return this.y;
     
 }
 
-heroObj.prototype.move = function(x,y){
+heroObj.prototype.move = function(x,y){//成员函数--更新坐标值
     
     this.x = x * cellLength;
     this.y = y * cellLength;
